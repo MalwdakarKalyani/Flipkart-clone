@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+        /* start css for droupdown */
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .droupdown-content{
+            display: none;
+            position: absolute;
+            background-color:white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .droupdown:hover .droupdown-content{
+            display: block;
+        }
+
+        .name{
+            font-size: medium;
+        }
+
+        .prise{
+            font-size: medium;
+            color: rgb(127, 163, 64); 
+        }
+
+        .tag{
+            font-size: medium;
+            color: grey;
+        }
+        /* end css for droupdown */
+
+        /*  start css effect for zoom img */
+       .zoomeffect:hover
+       {
+           transition:transform 0.0s;
+           transform:scale(1.05);
+       }
+       /*  end css effect for zoom img */
+
+       /* start css for slider */
+       .myslides
+        {
+            display: none;
+        }
+        /* end css for slider */
+
+        /* start horizontal line for footer */
+        hr{
+            border-top: 1px solid grey;
+            width:100%;  
+        }
+        /* end horizontal line for footer */
+
+        /* start for vertical line inside table */
+        .vertical{
+            border-left: 2px solid grey;
+            height: 160px;
+            position:absolute;
+            left:45%;
+        }
+        /* end for vertical line inside table */
+        
+    /*start login button coding*/
+    button {
+    background-color: white;
+    color:blue;
+    padding: 9px 45px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   }
+
+   button:hover {
+  opacity: 0.8;
+   }
+/*end login button coding*/
+
+/*Start search bar*/
+.search{
+    width:500px;
+    height: 20px;
+    border: 3px solid white;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }    
+.searchButton {
+    width: 3px;
+   height: 36px;
+   border: 1px solid white;
+  background: white;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+}
+/**end search bar*/
+    </style>
+</head>
+<body bgcolor="#f1f3f6">
+    <table border="0" bgcolor="#2554C7" width="100%"style="height: 40px; align-items: center;" >
+    <tr>
+        <td width="20%" align="right" ><img src="F:\AJ Project\images\Cart\flipkart logo.PNG"><br><a href="#" align="right"
+             style="color:white ;font-size: small; "><b><i>Explore</i></b><img src="F:\AJ Project\images\Cart\Flipkart Logo Plus.PNG" 
+              align="right" ></a></td>
+
+        <!--Start Search bar-->
+        <td style="display: flex; align-items: baseline;" ><input type="text" class="search" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+            </td>
+         <!--End search bar-->  
+
+        <td><a href="#"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button></a></td>    
+        <td> <font color="white">More </font></td>
+        <td><font color="white"><img src="F:\AJ Project\images\Cart\shopping-cart (2).png" align="right" width="30%" height="40%"></font></td>
+        <td  align="left"  style="color: white">Cart</td>
+    </tr>
+    </table>
+    
+    <!-- Start Droupdown menu -->
+    <table border="0" width="100%" bgcolor="white">
+        <tr align="center">
+            <td width="10%"><div class="droupdown">
+                <span>Electronics</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+        </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>TV & Appliances</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Men</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Baby & Kids</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Baby & Kids</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Home & Furniture</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Sports,Book & More</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Flights</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>offer Zone</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+            </td>
+
+            <td width="10%"><div class="droupdown">
+                <span>Grocery</span>
+                <div class="droupdown-content">
+                    <p>Mobiles</p>
+                    <p>Mi</p>
+                    <p>Realme</p>
+                    <p>Samsung</p>
+                    <p>infinix</p>
+                </div>    
+            </div>
+           </td>
+        </tr>
+    </table> <!-- End Droupdown menu -->
+    
+    <br>
+    <!-- start slider images  banners -->
+    <div class="w3-content w3-section" style="max-width:1350px">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b4.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b5.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b6.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b7.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b8.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b9.PNG"style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b1.PNG" style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b2.PNG" style="width:100%">
+        <img class="myslides" src="F:\AJ Project\images\Banners\b3.PNG"style="width:100%">
+
+    </div>
+    <br>
+    <!-- End slider images -->
+
+    <!-- start product images -->
+    <table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Deals of the Day </h2><img src="F:\AJ Project\images\Cart\timmer.PNG" style="vertical-align:middle; margin-top: -47px ; margin-left: 180px ;">
+                                                                                      <p id="demo" style="color:gray; font-size: large; margin-top: -42px; margin-left: 220px ;"></p>
+                                                                                                <p style="color:gray; font-size: large; margin-top: -20px ; margin-left: 315px">Left</p><br><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i1.PNG" ></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i2.PNG" ></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i3.PNG" ></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i4.PNG" ></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i5.PNG" ></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Deal of Dealy\i6.PNG" ></th>
+    </tr>
+   
+    <tr align="center" class=name>
+        <td>Sprakers</td>
+        <td>Headphones</td>
+        <td>Home Decor Range</td>
+        <td>Fossil,LimeStone,Timex...</td>
+        <td>Solar Range</td>
+        <td>Dinner Sets & more</td>
+    </tr>
+
+    <tr align="center" class=prise>
+        <td>Upto 50% off</td>
+        <td>Upto 50% off</td>
+        <td>from ₹89 </td>
+        <td>Upto 70%+Extra 10%Off</td>
+        <td>form ₹299</td>
+        <td>form ₹299</td>
+    </tr>
+
+    <tr align="center" class="tag">
+        <td>BoAt,Infinity & more</td>
+        <td>JBL Sony & more</td>
+        <td>stickars,Clocks & more</td>
+        <td>@Mind Blowing Discounts</td>
+        <td>Best Selling</td>
+        <td>Best Selling</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6"><h2>Farniture Bestsellers</h2><br><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture.6PNG.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\furniture bestSellers\Capture7.PNG"></th>
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Bean Bag Covers</td>
+        <td>Stools</td>
+        <td>Furniture Accessories</td>
+        <td>Swings</td>
+        <td>Cabinet And Drawers</td>
+        <td>Tv Units</td>
+    </tr>
+
+    <tr align="center" class=prise>
+        <td>Min 80% Off</td>
+        <td>From ₹199</td>
+        <td>Upto 70% Off</td>
+        <td>From ₹1,499</td>
+        <td>From ₹199</td>
+        <td>form ₹2,100</td>
+    </tr>
+
+    <tr align="center" class="tag">
+        <td>XL,XLL & more</td>
+        <td>Multi Purpose</td>
+        <td>Bunk Bebs,benches...</td>
+        <td>Trendy Made In India</td>
+        <td>New Collection</td>
+        <td>Forzza,Zuari & more</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Men's Footwear</h2><br><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i6.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Men's Footwear\i7.PNG"></th>
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Nike, Skechers & more</td>
+        <td>Campus, Yonex & more</td>
+        <td>Puma</td>
+        <td>Data Cards</td>
+        <td>Trimmers And Hair Clippers</td>
+        <td>Best Selling Laptops</td>
+    </tr>
+
+    <tr align="center" class=prise>
+        <td>Explore More!</td>
+        <td>From ₹499</td>
+        <td>Min 40% off</td>
+        <td>From ₹399</td>
+        <td>Upto 40% Off</td>
+        <td>form ₹440</td>
+    </tr>
+
+    <tr align="center" class="tag">
+        <td>Sporte Footwear</td>
+        <td>Sports shoes</td>
+        <td>Men's Footwear</td>
+        <td>JioFi Hauwei & more </td>
+        <td>Buy Nova,Phillips & more</td>
+        <td>Asus,Acer,Dell & More</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Best of Electronics</h2><br><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\best of electronics\Capture6.PNG"></th>  
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Best Brands</td>
+        <td>Laptos Skin Decals</td>
+        <td>Dolby Enabled</td>
+        <td>Data Cards</td>
+        <td>Trimmers And Hair Clippers</td>
+        <td>Best Selling Laptops</td>
+    </tr>
+
+    <tr align="center" class=prise>
+        <td>Shop Now</td>
+        <td>Upto 80% Off</td>
+        <td>Upto 70% Off</td>
+        <td>From ₹399</td>
+        <td>Upto 40% Off</td>
+        <td>form ₹440</td>
+    </tr>
+
+    <tr align="center" class="tag">
+        <td>For All Phone Models</td>
+        <td>FlipkartSmartBuy & more</td>
+        <td>Home Theaters & soundb..</td>
+        <td>JioFi Hauwei & more </td>
+        <td>Buy Nova,Phillips & more</td>
+        <td>Asus,Acer,Dell & More</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Top Offers On</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture4PNG.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\top offers on\Capture6.PNG"></th> 
+
+    </tr>
+    <tr align="center" class=name>
+        <td>Ray-Ban, Fastrack & more</td>
+        <td>Skybags</td>
+        <td>Sonata</td>
+        <td>ADIDAS</td>
+        <td>Safari</td>
+        <td>Chemistry</td>
+    </tr>
+
+    <tr align="center" class=prise>
+        <td>20-60% off</td>
+        <td>Upto 80% Off</td>
+        <td>form ₹199</td>
+        <td>Upto 30% Off</td>
+        <td>from ₹399</td>
+        <td>Upto 30% Off</td>
+    </tr>
+
+    <tr align="center" class="tag">
+        <td>Frames</td>
+        <td>Backpacks</td>
+        <td>Watches</td>
+        <td>Men & Women Sunglasses</td>
+        <td>Bagspacks</td>
+        <td>Fashion Jewellery</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Top Deals on Electronics</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture1.png"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture2.png"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture3.png"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture4.png"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture5.png"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Top Deals on Electronics\Capture6.png"></th>   
+    </tr>
+
+</tr>
+<tr align="center" class=name>
+    <td>Home Entertainment</td>
+    <td>Magnetic Mobile Cover</td>
+    <td>Designer Mobile cover</td>
+    <td>Mouse Pad</td>
+    <td>Keyboard Skins</td>
+    <td>Laptop skin Decals</td>
+</tr>
+
+<tr align="center" class=prise>
+    <td>Upto 50% Off</td>
+    <td>Shop now</td>
+    <td>Under ₹399</td>
+    <td>Upto 80% Off</td>
+    <td>Upto 70% Off !</td>
+    <td>Upto 80% Off !</td>
+</tr>
+
+<tr align="center" class="tag">
+    <td>boAt,F&D more</td>
+    <td>For your Phones</td>
+    <td>Best Selling Designes</td>
+    <td>Over 40,000 Designs !</td>
+    <td>Saco, Flipkart SmartBuy....</td>
+    <td>FlipkartSmartBuy & more</td>
+</tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Fashion For Everyone</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Fashion for everyone\Capture6.PNG"></th>  
+    </tr>
+    
+</tr>
+<tr align="center" class=name>
+    <td>Gowns</td>
+    <td>Party Blazers for Men</td>
+    <td>Anklets</td>
+    <td>lshin</td>
+    <td>Mega Deals! Grab all you..</td>
+    <td>Puma</td>
+</tr>
+
+<tr align="center" class=prise>
+    <td>Min 70% off</td>
+    <td>50%-80% Off</td>
+    <td>form ₹99</td>
+    <td>from ₹299</td>
+    <td>from ₹199</td>
+    <td>Upto 20% Off</td>
+</tr>
+
+<tr align="center" class="tag">
+    <td>Embroidered,Embellished..</td>
+    <td>Hangup</td>
+    <td>Shining Diva,Charms..</td>
+    <td>Ethics Wear</td>
+    <td>Paragon,Jade & more</td>
+    <td>Watches</td>
+</tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Top Picks On Men's Clothing</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tops picks on Men's Cloth\Capture6.PNG"></th>
+    </tr>
+
+
+<tr align="center" class=name>
+    <td>Roadster,HRX,Wrogn...</td>
+    <td>Caps</td>
+    <td>Allen Solly,US Polo...</td>
+    <td>Cool Cargos</td>
+    <td>Denim Shirts</td>
+    <td>Premium Caps</td>
+</tr>
+
+<tr align="center" class=prise>
+    <td>Min 60% off</td>
+    <td>Starting from ₹199</td>
+    <td>60-90% Off</td>
+    <td>Up to 60% Off</td>
+    <td>Min 60% Off</td>
+    <td>Up to 60% Off</td>
+</tr>
+
+<tr align="center" class="tag">
+    <td>T-shirts,Jeans</td>
+    <td>BestSellers</td>
+    <td>Casuals Pants</td>
+    <td>Grab or Gone</td>
+    <td>Not To be Missed</td>
+    <td>U.S.P.A ,Adidas..</td>
+</tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Home Essentials</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Home Essensials\Capture6.PNG"></th>
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Electric Kettles</td>
+        <td>Home Temples</td>
+        <td>Home Temples</td>
+        <td>Roti Makers</td>
+        <td>shoes Racks</td>
+        <td>Collasible Wardrobe</td>
+    </tr>
+    
+    <tr align="center" class=prise>
+        <td>From ₹375</td>
+        <td>From ₹399</td>
+        <td>From ₹699</td>
+        <td>Upto 75% Off</td>
+        <td>From ₹249</td>
+        <td>From ₹399</td>
+    </tr>
+    
+    <tr align="center" class="tag">
+        <td>Havellas,phillips & more</td>
+        <td>Trendy Collection</td>
+        <td>Trendy Made In India coll...</td>
+        <td>Prestige,Aiwa & more</td>
+        <td>Trendy Collection Made....</td>
+        <td>FurnCentral,perfect Hom..</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Best of Appliances</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best of Appliances\Capture6.PNG"></th>  
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Electric Kettles</td>
+        <td>Sandwich Makers</td>
+        <td>Roti Makers</td>
+        <td>Room Heaters</td>
+        <td>Wakie Talkie</td>
+        <td>Landlines Phones</td>
+    </tr>
+    
+    <tr align="center" class=prise>
+        <td>From ₹375</td>
+        <td>Upto 80% Off</td>
+        <td>Upto 75% Off</td>
+        <td>Upto 30% Off</td>
+        <td>Upto 35% Off</td>
+        <td>From ₹399</td>
+    </tr>
+    
+    <tr align="center" class="tag">
+        <td>Havellas,phillips & more</td>
+        <td>Prestige,Nova & more</td>
+        <td>Prestige,Aiwa & more</td>
+        <td>By Balaji</td>
+        <td>Beetel,Motorola & more</td>
+        <td>Beetel,Motorola & more</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6" ><h2>Trending Offers</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Tranding Offers\Capture6.PNG"></th>   
+    </tr>
+
+    <tr align="center" class=name>
+        <td>Wrist Watches</td>
+        <td>Women's Sarees</td>
+        <td>Mangalsutra</td>
+        <td>Speakers</td>
+        <td>Sling Bags</td>
+        <td>Sunglasses</td>
+    </tr>
+    
+    <tr align="center" class=prise>
+        <td>Top Picks</td>
+        <td>Top Picks</td>
+        <td>Top Picks</td>
+        <td>Extra 10% Off</td>
+        <td>Extra 5% Off</td>
+        <td>Extra 5% Off</td>
+    </tr>
+    
+    <tr align="center" class="tag">
+        <td>Grab Now!</td>
+        <td>Grab Now!</td>
+        <td>Great Savings!</td>
+        <td>Shop now!</td>
+        <td>Hurry, Don't Miss Out!</td>
+        <td>Buy Now!</td>
+    </tr>
+</table>
+
+<br>
+<table border="0" width="100%" bgcolor="white">
+    <tr>
+        <td colspan="6"><h2>Best Battery Phones</h2><hr></td>
+    </tr>
+    <tr>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i1.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i2.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i3.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i4.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i5.PNG"></th>
+        <th class="zoomeffect"><img src="F:\AJ Project\images\Best Battery phones\i6.PNG"></th>
+    </tr>
+    <tr align="center" class=name>
+        <td>POCO M2 Pro (Two shad...</td>
+        <td>Samsung Galaxy M11 (Bl...</td>
+        <td>Realme Narzo 10 (That...</td>
+        <td>Tecno Spark Power 2 (lc...</td>
+        <td>Samsung Galaxy A21s (B...</td>
+        <td>Samsung Galaxy M01 (Bl...</td>
+    </tr>
+    
+    <tr align="center" class=prise>
+        <td>5000 mAh Battery</td>
+        <td>5000 mAh Battery</td>
+        <td>5000 mAh Battery</td>
+        <td>6000 mAh Battery</td>
+        <td>5000 mAh Battery</td>
+        <td>4000 mAh Battery</td>
+    </tr>
+    
+    <tr align="center" class="tag">
+        <td>Now ₹14999</td>
+        <td>Now ₹10090</td>
+        <td>Now ₹11999</td>
+        <td>Now ₹9999</td>
+        <td>Now ₹14699</td>
+        <td>Now ₹8032</td>
+        
+    </tr>
+  </table> <!-- End Products images -->
+<br><br><br>
+
+
+<!-- start information table -->
+<table border="0" width="100%" bgcolor="white">
+    <tr><td><font style="font-size: smaller; color:gray; font-family: Arial, Helvetica, sans-serif;">Top Stories:<b><font style="font-size: small; color:rgb(32, 27, 27); font-family: Arial, Helvetica, sans-serif;">Brand Directory</b></font></font><br><br>
+        <font style="font-size: medium; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">MOST SEARCHED FOR ON FLIPKART:</font><font style="font-size: small; color:rgb(83, 81, 81); font-family: Arial, Helvetica, sans-serif;">Flipkart PlusFlipkart Super CoinFlipkart COVID-19 InsuranceFlipkart Help CentreFlipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreMAX Fashion StoreSuper Fan ShowFake or Not ShowSnapchat SpectaclesSareesFlipkart Axis Bank Credit CardHand SanitizerRealme BandHuawei gt 2e Smart Watch5G MobilesFlipkart VideosFlipkart Pay LateriQOOO 3VaporizerNebulizersHand WashRealme Watch SRealme Watch S ProPollution MasksHuawei Band 4Realme 5iRealme Buds AirNokia 55 Inch TVRealme X2 PRONoise Colorfit Pro 2 SmartwatchUnicorn ToysNokia Pure BookRedmi 8Honor 20iOPPO K1Realme 5Realme 5 ProNokia Pure Book Laptop StoreFlipkart Axis Bank Credit CardRedmi K20Redmi K20 ProRealme Watch S StoreRealme Watch S Pro StoreRealme 3iRealme XPhantom 9Redmi 7ARedmi Note 7SBOSS SaleEarringsMens WatchesSilver Coins3m MasksJewelleryWomens Ethnic Wear FestWatchesGold CoinMangalsutran95 masksSunglassesMi SunglassesBackpacksBoat TrimmerRevlon Hair DryerDecathlon Fashion StoreBeing Human Bracelet<br>
+        MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2Realme 5Infinix Hot 8iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone xiphone 8iphone 7iphone 6Redmi 5A4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile<br>
+        CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR<br>
+        LAPTOPS:Microsoft Surface Go Pentium Gold 64GBMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsBusiness Laptops<br>
+        TVS:OnePlus TVsRealme SLED 4K Smart TVsMI 43 Inch 4K TVMI 40 Inch TVMi 65 Inch TVSamsung 32 Smart TVLG TVTVSony TVSamsung TVMi 49 Inch Smart TVAndroid TelevisionIffalcon TvMi TV<br>
+        LARGE APPLIANCES:Voltas ACHitachi ACLloyd ACBlue Star ACDaikin ACLG ACSamsung RefrigeratorsHaier RefrigeratorWhirlpool Refrigerator<br>
+        CLOTHING:Men ShirtsMen T-ShirtsJeansRaincoatMen SuitsMen TrousersMens BlazersSareeDressesSkirtsDesigner Salwar SuitsBraDesigner KurtisTrack PantMen KurtaGym WearParty DressesPalazzo SuitsGlovesNightyMaxi DressesAnarkaliIndo Western DressGownsCulottesSherwaniGirls ClothesSalwar SuitsTopsLehengaDress MaterialsKurtisDesigner SareesSummer DressesLeggingsDesigner BlousesKids ClothingBlouse DesignsBanarasi SareesSilk SareesCotton SareesShortsBlouseLong SkirtsPalazzoWinter JacketsJoggersMini DressesNight SuitsBanarsi SuitInnerwearSports WearCapChanderi SareesLinen SareesPaithani SareesOff the shoulder topsPantiesSharara SuitsShrugsSalwarRuffle SareesBikiniPajamasDhoti KurtaManyavar KurtasJacketsWestern WearLevis JacketsSleepwearShawlsCardigansPulloverStolesDenim JacketsLeather JacketsClothingKids ClothingWinter WearScarvesSports JacketsGeorgette SareesEthnic WearBriefs & TrunksSweatshirtsHome Wear DressSweatersKids JacketsKids SweatersKids SweatshirtsKids ThermalsInfant Winter WearKids Winter Wear<br>
+        FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes<br>
+        GROCERIES:PhonePe Grocery VoucherHand WashSugar Jaggery SaltsRiceMasala & SpicesDal PulsesAttaCookiesNoodlesGheeDry FruitsToor DalOlive OilSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaButterAmul MilkJuicesTata TeaGrocery StoreGrocery Essential StoreMuesliBreakfast CerealHand WashHand SanitizerLizol Floor CleanerDetergentsChipsTeaMilkChocolatesSoft DrinksRavaCoffeeSona Masoori RiceSugarColgate ToothpasteShampooAlmondsMoong DalInstant CoffeeParle Namkeen<br>
+        BEST SELLING ON FLIPKART:Samsung Galaxy Tab S7+BooksToy StoreCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksFastrack WatchesWalletsEarringsGold CoinsHandbags<br>
+        FURNITURE:FurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsRed SofaWhite SofaGreen SofaBlack SofaBrown Sofa</font><br><br><br>
+
+
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Flipkart: The One-stop Shopping Destination</b></font><br><br>
+       <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.<br><br>
+        What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</font><br><br>
+        
+
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Flipkart Plus</b></font><br><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!<br><br>
+        
+        What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+        An annual Zomato Gold membership<br>
+        An annual Hotstar Premium membership<br>
+        6 months Gaana plus subscription<br>
+        Rupees 550 instant discount on flights on ixigo<br>
+        Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>No Cost EMI</b></font><br><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>EMI on Debit Cards</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Mobile Exchange Offers</b></font><br><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply</font><br>.<br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>What Can You Buy From Flipkart?</b></font><br><br>
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Mobile Phones</b></font><br><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;"> From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Electronic Devices and Accessories</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.<br>
+        
+        
+        Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>
+        
+        How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Large Appliances</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Small Home Appliances</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Lifestyle</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Home and Furniture</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.<br><br>
+        
+        You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Baby and Kids</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby</font><br>.<br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Books, Sports and Games</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</font><br><br>
+        
+        <font style="font-size: medium; color:rgb(46, 45, 45); font-family: Arial, Helvetica, sans-serif;"><b>Grocery/Supermart</b></font><br>
+        <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;">Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</font><br><br>
+    </td>
+</tr>
+</table>
+<!-- end information table -->
+
+<br>
+<!-- start for footer -->
+<table Border="0" Width="100%" bgcolor="#09406e">
+
+    <tr style="color: #5f666d; font-size: medium;">
+        <td>ABOUT</td>
+        <td>HELP</td>
+        <td>POLICY</td>
+        <td>SOCIAL</td>
+        <div class ="vertical"></div>
+        <td>Mail Us:</td>
+        <td>Registered Office Address</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Contact Us</td>
+        <td>Payments</td>
+        <td>Return Policy</td>
+        <td>Fackbook</td>
+        <td>Flipkart Internet Private Limited,</td>
+        <td>Flipkart Internet Private Limited,</td>
+    </tr>
+
+    
+    <tr style="color: white; font-size: small;">
+        <td>ABOUT Us</td>
+        <td>Shipping</td>
+        <td>Terms Of Use</td>
+        <td>Twitter</td>
+        <td>Buildings Alyssa, Begonia &</td>
+        <td>Buildings Alyssa, Begonia &</td>
+    </tr>
+
+
+    <tr style="color: white; font-size: small;">
+        <td>Careers</td>
+        <td>Cancelletions & Returns</td>
+        <td>Security</td>
+        <td>YouTube</td>
+        <td>Clove Embassy Tech Village,</td>
+        <td>Clove Embassy Tech Village,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Flipkart Stories</td>
+        <td>FAQ</td>
+        <td>Privacy</td>
+        <td></td>
+        <td>Outer Ring Road, Devarabeesanahalli Village,</td>
+        <td>Outer Ring Road, Devarabeesanahalli Village,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Press</td>
+        <td>Report Infringement</td>
+        <td>Sitemap</td>
+        <td></td>
+        <td>Bengaluru, 560103,</td>
+        <td>Bengaluru, 560103,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Flipkart Wholesale</td>
+        <td></td>
+        <td>EPR Compliance</td>
+        <td></td>
+        <td>Karnataka, India</td>
+        <td>Karnataka, India</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>CIN : U51109KA2012PTC066107</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Telephone: <a style="color: rgb(14, 10, 243);">1800 202 9898</a></td>
+    </tr>
+
+   
+    <tr><td colspan="6" ><hr></td></tr>
+
+    <tr>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\1.PNG"> &nbspSell On Flipkart</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\2.PNG"> &nbspAdvertise</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\3.PNG"> &nbspGift Cards</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\4.PNG"> &nbspHelp Center</th>
+        <th style="color: white; font-size: large;">© 2007-2020 Flipkart.com</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\5.PNG"></th>
+    </tr>
+</table>
+<!-- End for Footer -->
+
+<!-- for Banner slider effects -->
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++){
+            x[i].style.display = "none" ;
+        }
+
+        myIndex++;
+        if (myIndex > x.length) (myIndex = 1)
+        x[myIndex-1].style.display = "block" ;
+        setTimeout(carousel, 4000); // change image every 2 sec 3000 = 3sec
+    }
+</script>
+<!-- End Banner slider effects-->
+
+<!--Start deals of the day timmer-->
+<script>
+    //set the date we're counting down to
+    var countDownDate = new Date("jun 30, 2021 18:37:10").getTime();
+
+    //update the count down every 1 second
+    var x = setInterval(function()  {
+
+        //get today's date & time 
+        var now = new Date().getTime();
+
+        //find the distance betweent now and the count down date
+        var distance = countDownDate - now;
+
+        //time calculate for days, hours, min, and sec.
+        var days = Math.floor(distance /(1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance %(1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance %(1000 * 60 * 60 )) / (1000 * 60 ));
+        var seconds = Math.floor((distance %(1000 * 60 )) /  1000 );
+
+        //output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days +" :" + hours + " :" + minutes + " :" + seconds + "  ";
+
+        //if the count down is over, write some text
+        if(distance < 0){
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<!--End deals of the day-->
+
+<!--Start Search bar java Script-->
+<!--End search bar java script-->
+</body>
+</html> 

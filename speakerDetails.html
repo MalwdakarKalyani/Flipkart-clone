@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speakersDetails</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    /* start css for droupdown */
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .droupdown-content{
+            display: none;
+            position: absolute;
+            background-color:white;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .droupdown:hover .droupdown-content{
+            display: block;
+        }
+
+        .name{
+            font-size: medium;
+        }
+
+        .prise{
+            font-size: medium;
+            color: rgb(127, 163, 64); 
+        }
+
+        .tag{
+            font-size: medium;
+            color: grey;
+        }
+        /* end css for droupdown */
+
+           /*start login button coding*/
+    button {
+    background-color: white;
+    color:blue;
+    padding: 9px 45px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+   }
+
+   button:hover {
+  opacity: 0.8;
+   }
+/*end login button coding*/
+
+/*Start search bar*/
+.search{
+    width:80%;
+    height: 20px;
+    border: 3px solid white;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;} 
+.searchButton {
+    width: 5px;
+   height: 36px;
+   border: 1px solid white;
+  background: white;
+  text-align: center;
+  border: 1px solid white;
+  background: white;
+  text-align: center;}
+/**end search bar*/
+        </style>
+</head>
+    <body bgcolor="#f1f3f6">
+        <table border="0" bgcolor="#2554C7" width="100%"style="height: 40px; align-items: center;">
+            <tr>
+                <td width="20%" align="right" ><img src="F:\AJ Project\images\Cart\flipkart logo.PNG"><br><a href="#" align="right"
+                     style="color:white ;font-size: small; "><b><i>Explore</i></b><img src="F:\AJ Project\images\Cart\Flipkart Logo Plus.PNG" 
+                      align="right" ></a></td>
+        
+                <!--Start Search bar-->
+                <td width="55%"><input type="text" class="search" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                   </button>
+                    </td>
+                 <!--End search bar-->  
+        
+                <td><a href="#"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button></a></td>    
+                <th> <font color="white">More </font></th>
+                <th><font color="white"><img src="F:\AJ Project\images\Cart\shopping-cart (2).png" align="right" width="30%" height="40%"></font></th>
+                <th align="left"  style="color: white">Cart</th>
+            </tr>
+            </table>
+        
+        <!-- Start Droupdown menu -->
+        <table border="0" width="100%" bgcolor="white">
+            <tr align="center">
+                <td width="10%"><div class="droupdown">
+                    <span>Electronics</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+            </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>TV & Appliances</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Men</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Baby & Kids</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Baby & Kids</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Home & Furniture</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Sports,Book & More</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Flights</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>offer Zone</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+                </td>
+    
+                <td width="10%"><div class="droupdown">
+                    <span>Grocery</span>
+                    <div class="droupdown-content">
+                        <p>Mobiles</p>
+                        <p>Mi</p>
+                        <p>Realme</p>
+                        <p>Samsung</p>
+                        <p>infinix</p>
+                    </div>    
+                </div>
+               </td>
+            </tr>
+        </table> <!-- End Droupdown menu -->
+        <br>
+        <br>
+
+        <table border="3" width="100%">
+            <tr>
+                <td width="33%"><img src="F:\AJ Project\images\Deal of Dealy\speakars.PNG" width="100%"></td>
+                <td><b><font style="font-size: x-large;">boAt Stone 190F 5 W Bluetooth Speaker  (Blue, Stereo Channel)</font></b><br>
+                <img src= "F:\AJ Project\images\Deal of Dealy\speaker\rating.PNG"> <font style="font-size: small; color:rgb(83, 80, 80); font-family: Arial, Helvetica, sans-serif;"><b>35,497 Ratings & 4,292 Reviews</b></font><img src= "F:\AJ Project\images\Deal of Dealy\speaker\logofk.PNG"><br><br>
+                <b><font style="font-size: 30px;" >₹999</font></b><font color="gray">   ₹2,999</font> <font color="green">66% off</font>
+                <p><b>Available offers</b></p>
+                <p><img src= "F:\AJ Project\images\Deal of Dealy\speaker\bulates.PNG" style="margin-bottom: 3px;"><font><b> Bank Offer </b></font> <font style="color: rgb(48, 47, 47); font-size:14px;">5% Unlimited Cashback on Flipkart Axis Bank Credit Card</font> <font color="blue"> T&C</font></p>
+                <p><img src= "F:\AJ Project\images\Deal of Dealy\speaker\bulates.PNG" style="margin-bottom: 3px;"><font><b> Bank Offer </b></font> <font style="color: rgb(48, 47, 47); font-size:14px;">₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-</font> <font color="blue"> T&C</font></p>
+                <p><img src= "F:\AJ Project\images\Deal of Dealy\speaker\bulates.PNG" style="margin-bottom: 3px;"><font><b> Bank Offer </b></font> <font style="color: rgb(48, 47, 47); font-size:14px;">₹20 Off on first prepaid transaction using RuPay debit card, minimum order value ₹750/-</font> <font color="blue"> T&C</font></p>
+                <p><img src= "F:\AJ Project\images\Deal of Dealy\speaker\bulates.PNG" style="margin-bottom: 3px;"><font><b> Bank Offer </b></font> <font style="color: rgb(48, 47, 47); font-size:14px;">Buy now and Get 6 months Free Spotify Premium Trial</font> <font color="blue"> Know More</font></p>
+
+            </td>
+                
+            </tr>
+
+        </table>
+
+        <br>
+<!-- start for footer -->
+<table Border="0" Width="100%" bgcolor="#09406e">
+
+    <tr style="color: #5f666d; font-size: medium;">
+        <td>ABOUT</td>
+        <td>HELP</td>
+        <td>POLICY</td>
+        <td>SOCIAL</td>
+        <div class ="vertical"></div>
+        <td>Mail Us:</td>
+        <td>Registered Office Address</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Contact Us</td>
+        <td>Payments</td>
+        <td>Return Policy</td>
+        <td>Fackbook</td>
+        <td>Flipkart Internet Private Limited,</td>
+        <td>Flipkart Internet Private Limited,</td>
+    </tr>
+
+    
+    <tr style="color: white; font-size: small;">
+        <td>ABOUT Us</td>
+        <td>Shipping</td>
+        <td>Terms Of Use</td>
+        <td>Twitter</td>
+        <td>Buildings Alyssa, Begonia &</td>
+        <td>Buildings Alyssa, Begonia &</td>
+    </tr>
+
+
+    <tr style="color: white; font-size: small;">
+        <td>Careers</td>
+        <td>Cancelletions & Returns</td>
+        <td>Security</td>
+        <td>YouTube</td>
+        <td>Clove Embassy Tech Village,</td>
+        <td>Clove Embassy Tech Village,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Flipkart Stories</td>
+        <td>FAQ</td>
+        <td>Privacy</td>
+        <td></td>
+        <td>Outer Ring Road, Devarabeesanahalli Village,</td>
+        <td>Outer Ring Road, Devarabeesanahalli Village,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Press</td>
+        <td>Report Infringement</td>
+        <td>Sitemap</td>
+        <td></td>
+        <td>Bengaluru, 560103,</td>
+        <td>Bengaluru, 560103,</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td>Flipkart Wholesale</td>
+        <td></td>
+        <td>EPR Compliance</td>
+        <td></td>
+        <td>Karnataka, India</td>
+        <td>Karnataka, India</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>CIN : U51109KA2012PTC066107</td>
+    </tr>
+
+    <tr style="color: white; font-size: small;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Telephone: <a style="color: rgb(14, 10, 243);">1800 202 9898</a></td>
+    </tr>
+
+   
+    <tr><td colspan="6" ><hr></td></tr>
+
+    <tr>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\1.PNG"> &nbspSell On Flipkart</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\2.PNG"> &nbspAdvertise</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\3.PNG"> &nbspGift Cards</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\4.PNG"> &nbspHelp Center</th>
+        <th style="color: white; font-size: large;">© 2007-2020 Flipkart.com</th>
+        <th style="color: white; font-size: large;"><img src="F:\AJ Project\images\Cart\FooterIMG\5.PNG"></th>
+    </tr>
+</table>
+
+<!-- End for Footer -->
+
+
+
+        
+</body>
+</html>
